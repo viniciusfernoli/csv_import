@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <title>App</title>
+</head>
+<body class="mr-10 ml-10">
+
+  <h1 class="text-4xl font-bold uppercase text-center mb-8 text-slate-700">Importar Transações</h1>
+
+  <form  class="flex flex-col" enctype="multipart/form-data" method="post" id="formulario">
+    <input type="file" name="file"
+    class="file:mr-4 file:py-5 file:px-4
+    file:rounded-full file:border-0
+    file:text-sm file:font-semibold file:bg-slate-300 bg-slate-100 rounded-full w-auto" multiple accept="text/csv">
+    <label class="text-gray-400" for="archive">Selecione o arquivo para realizar o upload</label>
+
+    <button type="submit" class="bg-blue-200 rounded-xl py-2 uppercase font-bold w-32 mt-4 mb-4" id="import">Importar</button>
+  </form>
+  <div class="border-spacing-1 w-full"></div>
+  <div class="flex flex-col">
+    <h2 id="titleTransaction" class="text-4xl font-bold uppercase text-center mb-8 text-slate-700"></h2>
+    <div id="divTableTransactions"></div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>

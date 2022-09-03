@@ -1,0 +1,40 @@
+{
+  "name": "planilha-csv",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node-dev -r dotenv/config --respawn --transpile-only D:/projetos/planilha-csv/src/server.ts",
+    "tailwind": "npx tailwindcss -i ./src/assets/style.css -o ./out/assets/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dayjs": "^1.11.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "knex": "^2.2.0",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/multer": "^1.4.7",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "2.7.1",
+    "prettier-eslint": "^15.0.1",
+    "tailwindcss": "^3.1.8",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  }
+}

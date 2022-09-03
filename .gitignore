@@ -1,0 +1,8 @@
+#ignore all files in folder
+.vscode/
+out/
+node_modules/
+#files ignore
+.env
+.eslintrc.js
+.prettierrc
